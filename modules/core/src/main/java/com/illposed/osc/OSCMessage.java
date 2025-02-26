@@ -23,10 +23,10 @@ public class OSCMessage implements OSCPacket {
 	/**
 	 * Java regular expression pattern matching a single invalid character.
 	 * The invalid characters are:
-	 * ' ', '#', '*', ',', '?', '[', ']', '{', '}'
+	 * ' ', '#'
 	 */
 	private static final Pattern ILLEGAL_ADDRESS_CHAR
-			= Pattern.compile("[ #*,?\\[\\]{}]");
+			= Pattern.compile("[ #]");
 
 	private final String address;
 	private final List<Object> arguments;
